@@ -8,8 +8,7 @@ import java.io.IOException;
 public class Chat  {
 	
 	    public static void main(String args[]) throws IOException {
-	    	//InetAddress enderecoIP = InetAddress.getLocalHost();
-	    	//System.out.println("Endereço IP da máquina local: " + enderecoIP.getHostAddress());
+	    	
 	    	Enviar send = new Enviar();
 	    	Receber rcv = new Receber();
 	   
