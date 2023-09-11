@@ -20,7 +20,6 @@ public class Enviar implements Runnable{
 				
 				String mensagem = scanner.nextLine();
 				String nome = scanner.next();
-				//socket = new Socket("172.27.160.1",54322);
 				socket = new Socket(nome,54322);
 				DataOutputStream saida = new DataOutputStream(socket.getOutputStream());
 				if (mensagem.equalsIgnoreCase("SAIR")) {
