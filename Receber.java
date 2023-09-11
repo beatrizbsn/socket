@@ -12,15 +12,9 @@ public class Receber implements Runnable {
 
     
 		public void run() {
-		
 			try {
 				sSocket = new ServerSocket(54322);
-				//int i = 0;
 				while (true) {
-					/*if (i == 5) {
-	                    break; 
-						}
-					i = i + 1;*/
 					Socket sockets = sSocket.accept();
 					Treceber contato = new Treceber(sockets);
 					Thread Tcontato = new Thread(contato);	
